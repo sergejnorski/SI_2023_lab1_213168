@@ -1,0 +1,51 @@
+1. Завршено
+2. Завршено
+3. Завршено
+4. mkdir SI_2023_lab1_213168
+cd SI_2023_lab1_213168
+git init
+5. git remote add origin https://github.com/sergejnorski/SI_2023_lab1_213168.git
+6. Прво направив со notepad README.md и внатре напишав "Sergej Norski 213168"
+git add README.md
+git commit -m "Initial commit"
+7. Направив SILab.java file, ја ископирав содржината.
+git add SILab1.java
+git commit -m "Add java class."
+8. git push -u origin master
+9. Креираме нови гранки:
+git branch bug1
+git branch bug2
+git branch bug3
+10. git checkout bug1
+11. Ја поправив грешката во SILab.java и потоа ги извршив командите:
+git add SILab1.java
+git commit -m "Fix wrong loop for reading"
+12. git checkout bug2
+13. Ја поправив грешката и пота ги извршив:
+git add .
+git commit -m "Fix wrong condition in filterOddNumbers."
+14. git checkout bug3
+15. Ја поправив грешката и пота ги извршив:
+git add .
+git commit -m "Fix method sumEvenNumbers"
+16. git push --all origin
+17. git checkout master
+18. git merge bug1 (Нема конфликти / Fast Forward Стратегија)
+19. git push --all origin 
+20. git merge bug2 (Нема конфликти / Recursive Стратегија)
+21. git push --all origin 
+22. git checkout bug3
+23. git rebase master
+24. git checkout master
+25. git merge bug3 (Нема конфликти / Fast Forward Стратегија)
+26. git push --all --force origin
+27. Креирам датотека logs.txt и ја додавам, ги копирам досегашните git логови од командата:
+git logs
+Ја додавам датотеката 213168.txt  и извршувам:
+git add *.txt
+git commit -m "Final commit"
+28. git push --all origin
+
+
+
+
